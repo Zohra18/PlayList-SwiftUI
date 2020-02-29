@@ -13,6 +13,9 @@
 		3C52D24E240A8C7600CF87D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C52D24D240A8C7600CF87D5 /* Assets.xcassets */; };
 		3C52D251240A8C7600CF87D5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C52D250240A8C7600CF87D5 /* Preview Assets.xcassets */; };
 		3C52D254240A8C7600CF87D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C52D252240A8C7600CF87D5 /* LaunchScreen.storyboard */; };
+		3C52D25F240A8D2C00CF87D5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C52D25E240A8D2C00CF87D5 /* User.swift */; };
+		3C52D262240A963500CF87D5 /* UserDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C52D261240A963500CF87D5 /* UserDB.swift */; };
+		3C52D264240AA77D00CF87D5 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C52D263240AA77D00CF87D5 /* UserProfile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		3C52D250240A8C7600CF87D5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3C52D253240A8C7600CF87D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3C52D255240A8C7600CF87D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C52D25E240A8D2C00CF87D5 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		3C52D261240A963500CF87D5 /* UserDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDB.swift; sourceTree = "<group>"; };
+		3C52D263240AA77D00CF87D5 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +62,10 @@
 		3C52D246240A8C7400CF87D5 /* PlayList-SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				3C52D247240A8C7400CF87D5 /* AppDelegate.swift */,
-				3C52D249240A8C7400CF87D5 /* SceneDelegate.swift */,
-				3C52D24B240A8C7400CF87D5 /* ContentView.swift */,
+				3C52D25B240A8CDD00CF87D5 /* App Lifecycle */,
+				3C52D25C240A8CEE00CF87D5 /* View */,
+				3C52D25D240A8CFB00CF87D5 /* Model */,
+				3C52D260240A961900CF87D5 /* DataBase */,
 				3C52D24D240A8C7600CF87D5 /* Assets.xcassets */,
 				3C52D252240A8C7600CF87D5 /* LaunchScreen.storyboard */,
 				3C52D255240A8C7600CF87D5 /* Info.plist */,
@@ -73,6 +80,40 @@
 				3C52D250240A8C7600CF87D5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3C52D25B240A8CDD00CF87D5 /* App Lifecycle */ = {
+			isa = PBXGroup;
+			children = (
+				3C52D249240A8C7400CF87D5 /* SceneDelegate.swift */,
+				3C52D247240A8C7400CF87D5 /* AppDelegate.swift */,
+			);
+			path = "App Lifecycle";
+			sourceTree = "<group>";
+		};
+		3C52D25C240A8CEE00CF87D5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3C52D24B240A8C7400CF87D5 /* ContentView.swift */,
+				3C52D263240AA77D00CF87D5 /* UserProfile.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3C52D25D240A8CFB00CF87D5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3C52D25E240A8D2C00CF87D5 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3C52D260240A961900CF87D5 /* DataBase */ = {
+			isa = PBXGroup;
+			children = (
+				3C52D261240A963500CF87D5 /* UserDB.swift */,
+			);
+			path = DataBase;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,6 +187,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C52D25F240A8D2C00CF87D5 /* User.swift in Sources */,
+				3C52D262240A963500CF87D5 /* UserDB.swift in Sources */,
+				3C52D264240AA77D00CF87D5 /* UserProfile.swift in Sources */,
 				3C52D248240A8C7400CF87D5 /* AppDelegate.swift in Sources */,
 				3C52D24A240A8C7400CF87D5 /* SceneDelegate.swift in Sources */,
 				3C52D24C240A8C7400CF87D5 /* ContentView.swift in Sources */,
